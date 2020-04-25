@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>multiple instance</title>
+    <script src="../vue.js"></script>
+</head>
+<body>
+    <div id="app-1">
+        <h3>{{ fullname }}</h3>
+        <h2>{{ firstApp() }}</h2>
+    </div>
+    <div id="app-2">
+        <h3>{{ name }}</h3>
+        <p>{{ university }}</p>
+        <h1>{{ secondApp() }}</h1>
+        <h2>{{ thirdApp() }}</h2>
+        <p>{{ Access() }}</p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

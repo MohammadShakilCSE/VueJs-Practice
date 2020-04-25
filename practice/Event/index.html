@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>clickEvent</title>
+    <script src="../vue.js"></script>
+
+
+</head>
+<body>
+    <div id="app">
+        <!--Click event-->
+        <h3>{{counter}}</h3>
+        <button type="submit" v-on:click="increment(1)">Increment by 1</button>
+        <button type="submit" @click="drecrement(1)">drecrement by 1</button>
+        <!--Double click event-->
+        <button type="submit"@dblclick="increment(5)">Increment by 5</button>
+        <button type="submit" @dblclick="drecrement(5)">drecrement by 5</button>
+
+    </div>
+  
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue Binding</title>
+    <script type = "text/javascript" src="../vue.js"></script>
+
+    <style>
+        .img{
+            width: 300px;
+            height:300px; 
+        }
+        input{
+            margin-bottom: 10px;
+            padding:8px;
+            width:30%;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        Name:{{name}} <br>
+        images Link:{{link}}
+        <br>
+        <!--Html binding-->
+        <a v-bind:href="link" v-bind:title="title">{{la}}</a>
+        <br>
+        <!--Html class binding-->
+        <img v-bind:src="imagesLink" v-bind:alt="title" v-bind:class={img:isActive}>
+
+        <br>
+        
+        <!--form binding-->
+        <form action="post">
+            <input type="text" v-bind:value="textName">
+            <br>
+            <input type="email" :value="txtEmail">
+            <br>
+            <button>Submit</button>
+        </form>
+        <br>
+        <!--html content binding-->
+        <div :html="htmlContent"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
